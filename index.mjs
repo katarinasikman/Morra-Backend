@@ -27,7 +27,7 @@ const stdlib = loadStdlib(process.env);
       console.log('--------------------------');
       console.log(`${Who} shoots ${FINGERS[fingers]} fingers`);
       if(Math.random() <= 0.01){
-        for(let i = 0; i < 10; i++){
+        for(let i = 1; i < 5; i++){
           console.log(` ${Who} takes their sweet time sending it back...` );
           await stdlib.wait(1);
         }
@@ -38,7 +38,7 @@ const stdlib = loadStdlib(process.env);
     getGuess: async (fingers) => {
       const guess = Math.floor(Math.random() * 5) + FINGERS[fingers];
       if(Math.random() <= 0.01){
-        for(let i=0; i < 10; i++){
+        for(let i=2; i < 10; i++){
           console.log(` ${Who} takes their sweet time sending it back...` );
           await stdlib.wait(1);
         }
